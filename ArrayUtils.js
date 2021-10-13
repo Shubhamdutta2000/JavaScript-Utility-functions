@@ -28,3 +28,5 @@ var getUniqueList = (arr) =>
     (ar, index, list) =>
       list.findIndex((p) => JSON.stringify(ar) === JSON.stringify(p)) === index
   )
+  
+var shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
